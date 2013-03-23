@@ -1,5 +1,5 @@
-<div class="hero-unit">
-	
+<% unless user_signed_in? %>
+	<div class="hero-unit">
 	<h1>Welcome to Sole Closet</h1>
 
 	<p>
@@ -10,3 +10,4 @@
 	</p>
 	
 </div>
+<% end %>
