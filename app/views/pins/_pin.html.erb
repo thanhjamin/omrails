@@ -1,5 +1,5 @@
 <div class="box">
-	<%= link_to (image_tag pin.image(:medium)), pin %>
+	<%= link_to (image_tag pin.image(:medium)), "#myModal#{pin.id}", "data-toggle" => "modal" %>
 	<p class="description">
 	  <%= pin.description %>
 </p>
@@ -14,4 +14,6 @@
       <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %> 
 	</p>
    <% end %>
-</div>    
+</div> 
+
+<%= render 'pins/modal' , :pin => pin %>   
