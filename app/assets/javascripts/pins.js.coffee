@@ -10,6 +10,10 @@ jQuery ->
     $(window).scroll ->
       url = $('.pagination .next_page a').attr('href')
       if url && $(window).scrollTop() > $(document).height() - $(window).height() - 50
-        $('.pagination').text("Fetching more pins...")
-        $.getScript(url)
+      	# What to do at the bottom of the page
+      	alert("hey you made it!")
+        #$('.pagination').text("Fetching more pins...")
+        #$.getScript(url)
     $(window).scroll()
+
+    
