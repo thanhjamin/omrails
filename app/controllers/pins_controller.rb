@@ -12,6 +12,10 @@ class PinsController < ApplicationController
     end
   end
 
+  def index
+  @pins = Pin.search(params[:search])
+end
+
   # GET /pins/1
   # GET /pins/1.json
   def show
