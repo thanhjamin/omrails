@@ -12,7 +12,7 @@ class PinsController < ApplicationController
     end
   end
 
-  def index
+  def search
   @pins = Pin.search(params[:search])
 end
 
